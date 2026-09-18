@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goblin-fi</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --ink: #1c1a17;
+    --muted: #6b645c;
+    --rule: #e2dcd3;
+    --accent: #7a5c2e;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16151a;
+      --ink: #ece8e2;
+      --muted: #9c948a;
+      --rule: #2e2b33;
+      --accent: #d9b370;
+      --card: #1e1d23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding-block: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 {
+    font-size: 2rem; line-height: 1.15; margin: 0 0 .35em;
+    letter-spacing: -0.02em; text-wrap: balance;
+  }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: .18em; font-size: .7rem;
+    font-weight: 700; color: var(--accent); margin: 0 0 1.1em;
+  }
+  h2 { font-size: 1.05rem; margin: 2.2em 0 .6em; letter-spacing: -0.01em; }
+  p { margin: 0 0 1.1em; }
+  .lede { font-size: 1.1rem; color: var(--ink); }
+  .muted { color: var(--muted); }
+  ul { margin: 0 0 1.1em; padding-left: 1.2em; }
+  li { margin-bottom: .45em; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 20px 22px; margin: 1.8em 0;
+  }
+  footer {
+    margin-top: 3.2em; padding-top: 1.4em; border-top: 1px solid var(--rule);
+    font-size: .875rem; color: var(--muted);
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .85em; background: var(--card);
+    border: 1px solid var(--rule); border-radius: 4px; padding: .1em .35em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Personal project</p>
+  <h1>Goblin-fi</h1>
+
+  <p class="lede">A small private tool that publishes and maintains videos on its
+  owner's own YouTube channel.</p>
+
+  <p>Goblin-fi is not a product, a service, or an app you can sign up for. It is a set of
+  scripts that run on a single machine on a home network and manage one YouTube channel —
+  the one belonging to the person who wrote them. There is one user, and that user is the
+  owner.</p>
+
+  <h2>What it does</h2>
+  <p>It renders and queues video content, uploads finished pieces to the owner's channel,
+  and keeps the channel tidy afterwards: retitling, scheduling, setting visibility, and
+  removing superseded re-renders.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Why this page exists</h2>
+    <p class="muted" style="margin-bottom:0">Google requires a homepage and a privacy
+    policy for any application that requests access to a YouTube account, including
+    single-user personal ones. This is that homepage. The
+    <a href="./privacy.html">privacy policy is here</a>.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Questions about this application go to
+  <a href="mailto:thealchemistsradio@gmail.com">thealchemistsradio@gmail.com</a>.</p>
+
+  <footer>
+    Goblin-fi · personal project · last updated 17 September 2026 ·
+    <a href="./privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>

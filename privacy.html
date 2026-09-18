@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goblin-fi — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --ink: #1c1a17;
+    --muted: #6b645c;
+    --rule: #e2dcd3;
+    --accent: #7a5c2e;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16151a;
+      --ink: #ece8e2;
+      --muted: #9c948a;
+      --rule: #2e2b33;
+      --accent: #d9b370;
+      --card: #1e1d23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding-block: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.9rem; line-height: 1.15; margin: 0 0 .3em;
+    letter-spacing: -0.02em; text-wrap: balance;
+  }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: .18em; font-size: .7rem;
+    font-weight: 700; color: var(--accent); margin: 0 0 1.1em;
+  }
+  h2 {
+    font-size: 1.05rem; margin: 2.3em 0 .6em; letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 1.1em; }
+  .lede { font-size: 1.08rem; }
+  .muted { color: var(--muted); }
+  ul { margin: 0 0 1.1em; padding-left: 1.2em; }
+  li { margin-bottom: .5em; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 20px 22px; margin: 1.8em 0;
+  }
+  .card h2 { margin-top: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .85em; background: var(--bg);
+    border: 1px solid var(--rule); border-radius: 4px;
+    padding: .1em .35em; word-break: break-all;
+  }
+  footer {
+    margin-top: 3.2em; padding-top: 1.4em; border-top: 1px solid var(--rule);
+    font-size: .875rem; color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Goblin-fi</p>
+  <h1>Privacy Policy</h1>
+  <p class="muted" style="margin-top:-.4em">Last updated 17 September 2026</p>
+
+  <p class="lede">Goblin-fi is a personal, single-user tool. It manages one YouTube
+  channel — the one belonging to its owner — and it collects no information from anyone
+  else.</p>
+
+  <h2>Who this applies to</h2>
+  <p>There is exactly one user of this application: its owner, who is also the owner of
+  the YouTube channel it publishes to. The application is not distributed, has no sign-up,
+  and has no other users. If you are reading this and you are not that person, this policy
+  describes software that holds no data about you.</p>
+
+  <h2>What data the application accesses</h2>
+  <p>When the owner authorises the application, Google issues it a credential for the
+  scope <code>https://www.googleapis.com/auth/youtube</code>. The application uses that
+  access solely to act on the owner's own channel:</p>
+  <ul>
+    <li>upload videos</li>
+    <li>read back the list of videos on the channel</li>
+    <li>update video titles, descriptions, visibility and scheduling</li>
+    <li>delete videos it has superseded with a newer render</li>
+  </ul>
+  <p>It does not read, request, or store data belonging to any other Google account, and
+  it does not access viewer, subscriber, or comment data.</p>
+
+  <h2>Where the credential is stored</h2>
+  <p>The OAuth credential is written to a file on a single computer on the owner's private
+  home network. It is not transmitted to any third party, not synced to any cloud service,
+  and not stored on any server operated by anyone else. The application communicates only
+  with Google's own APIs.</p>
+
+  <div class="card">
+    <h2>What is not done with your data</h2>
+    <p class="muted" style="margin-bottom:0">No data is sold, rented, shared, or
+    transferred to third parties. There is no analytics, no advertising, no tracking, and
+    no profiling. No human other than the owner has access to the credential or to
+    anything the application reads.</p>
+  </div>
+
+  <h2>Retention and deletion</h2>
+  <p>The stored credential persists until it is revoked or deleted. The owner may revoke
+  the application's access at any time from
+  <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account
+  permissions</a>, which immediately and permanently ends its ability to reach the
+  channel. Deleting the credential file has the same practical effect locally.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Goblin-fi's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google
+  API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If what the application does changes, this page is updated and the date at the top
+  changes with it.</p>
+
+  <h2>Contact</h2>
+  <p>Questions go to
+  <a href="mailto:thealchemistsradio@gmail.com">thealchemistsradio@gmail.com</a>.</p>
+
+  <footer>
+    <a href="./index.html">← Goblin-fi</a>
+  </footer>
+</main>
+</body>
+</html>
